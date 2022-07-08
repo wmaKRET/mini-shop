@@ -8,7 +8,6 @@ import Cart from "./pages/Cart"
 function App() {
   return (
     <>
-      <h1>nie działa :/</h1>
       <Header />
       <Routes>
           <Route exact path="/" element={<MainPage />}/>
