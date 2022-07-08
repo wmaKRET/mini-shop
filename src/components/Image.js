@@ -2,8 +2,8 @@ import React from "react"
 
 function Image({img}){
     return (
-        <div className="img-container">
-            <img src={img.url} className="img-image"/>
+        <div className="card">
+            <img src={img.url} className="card-image"/>
         </div>
     )
 }

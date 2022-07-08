@@ -6,8 +6,8 @@ import fullCart from "remixicon-react/ShoppingCartFillIcon"
 function Header(){
     return (
         <header>
-            <Link className="header-link" to="/">Mini Shop</Link>
-            <Link className="header-link" to="/cart">
+            <Link className="header-link header-link-l" to="/">Mini Shop</Link>
+            <Link className="header-link header-link-r" to="/cart">
                 <EmptyCart />
             </Link>
         </header>

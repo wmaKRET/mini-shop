@@ -26,10 +26,25 @@ header {
     text-decoration: none;
     cursor: pointer;
 
-    transition: all .2s ease-in-out;
-    &:hover {
-        color: orangered;
-        box-shadow: inset 200px 0 0 0 white;
+    &-r {
+        scale: 0.8;
+        border-right: 4px solid white;
+
+        transition: all .2s ease-in-out;
+        &:hover {
+            color: orangered;
+            box-shadow: inset -200px 0 0 0 white;
+        }
+    }
+
+    &-l {
+        border-left: 4px solid white;
+
+        transition: all .2s ease-in-out;
+        &:hover {
+            color: orangered;
+            box-shadow: inset 200px 0 0 0 white;
+        }
     }
 }
 
@@ -41,14 +56,20 @@ header {
     justify-content: center;
 }
 
-.img-container {
-    width: 100px;
-    height: 100px;
-    margin: 0.1em;
-}
+.card {
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
 
-.img-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    &-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        transition: all .1s ease-in-out;
+        &:hover {
+            scale: 1.05;
+            border: 2px solid orangered;
+        }
+    }
 }
