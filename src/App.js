@@ -1,8 +1,10 @@
 import React from "react"
+import { Routes, Route } from "react-router-dom"
+
 import Header from "./components/Header"
-import {Routes, Route} from "react-router-dom"
 import MainPage from "./pages/MainPage"
 import Cart from "./pages/Cart"
+
 import "./scss/app.css"
 
 function App() {
@@ -10,9 +12,9 @@ function App() {
     <>
       <Header />
       <Routes>
-          <Route exact path="/" element={<MainPage />}/>
-          <Route path="/cart" element={<Cart />}/>
-        </Routes>
+        <Route exact path="/" element={<MainPage />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
     </>
   )
 }

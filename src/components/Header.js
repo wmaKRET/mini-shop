@@ -1,9 +1,10 @@
 import React from "react"
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
+
 import EmptyCart from "remixicon-react/ShoppingCartLineIcon"
 import fullCart from "remixicon-react/ShoppingCartFillIcon"
 
-function Header(){
+function Header() {
     return (
         <header>
             <Link className="header-link header-link-l" to="/">Mini Shop</Link>

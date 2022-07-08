@@ -81,6 +81,11 @@ header {
   width: 200px;
   height: 200px;
   position: relative;
+  border: 2px solid white;
+}
+
+.card:hover {
+  border: 2px solid orangered;
 }
 
 .card-image {
@@ -88,19 +93,19 @@ header {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 2px solid white;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-}
-
-.card-image:hover {
-  border: 2px solid orangered;
 }
 
 .card-fav {
-  top: 5px;
-  left: 5px;
+  top: 8px;
+  left: 8px;
   position: absolute;
+}
+
+.card-fav.fav-on {
   color: white;
+}
+
+.card-fav.fav-off {
+  color: orangered;
 }
 /*# sourceMappingURL=app.css.map */
