@@ -80,7 +80,7 @@ header {
 .card {
   width: 200px;
   height: 200px;
-  border: 2px solid white;
+  position: relative;
 }
 
 .card-image {
@@ -88,12 +88,19 @@ header {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: all .1s ease-in-out;
-  transition: all .1s ease-in-out;
+  border: 2px solid white;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .card-image:hover {
-  scale: 1.05;
   border: 2px solid orangered;
+}
+
+.card-fav {
+  top: 5px;
+  left: 5px;
+  position: absolute;
+  color: white;
 }
 /*# sourceMappingURL=app.css.map */

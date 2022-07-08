@@ -13,10 +13,18 @@ function ContextProvider({children}){
             .catch(error => console.log(error))
     }, [])
 
+    function toggleFav(id){
+        const updatedPhotos = photos.map(photo => photo.id === id
+                                ? {...photo, isFavorite: !photo.isFavorite}
+                                : photo)
+        setPhotos(updatedPhotos)
+    }
+
     return (
         <Context.Provider
             value= {{
-                photos
+                photos,
+                toggleFav
             }}
         >
             {children}
