@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
@@ -31,6 +31,7 @@ header {
         border-right: 4px solid white;
 
         transition: all .2s ease-in-out;
+
         &:hover {
             color: orangered;
             box-shadow: inset -200px 0 0 0 white;
@@ -41,6 +42,7 @@ header {
         border-left: 4px solid white;
 
         transition: all .2s ease-in-out;
+
         &:hover {
             color: orangered;
             box-shadow: inset 200px 0 0 0 white;
@@ -78,11 +80,25 @@ header {
         left: 8px;
         position: absolute;
 
-        &.fav-on{
+        &.fav-on {
             color: white;
         }
 
-        &.fav-off{
+        &.fav-off {
+            color: orangered;
+        }
+    }
+
+    &-cart {
+        top: 8px;
+        right: 8px;
+        position: absolute;
+
+        &.cart-empty {
+            color: white;
+        }
+
+        &.cart-full {
             color: orangered;
         }
     }

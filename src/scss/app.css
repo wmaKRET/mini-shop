@@ -108,4 +108,18 @@ header {
 .card-fav.fav-off {
   color: orangered;
 }
+
+.card-cart {
+  top: 8px;
+  right: 8px;
+  position: absolute;
+}
+
+.card-cart.cart-empty {
+  color: white;
+}
+
+.card-cart.cart-full {
+  color: orangered;
+}
 /*# sourceMappingURL=app.css.map */

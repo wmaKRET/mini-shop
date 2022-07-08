@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 
 import EmptyCart from "remixicon-react/ShoppingCartLineIcon"
-import fullCart from "remixicon-react/ShoppingCartFillIcon"
+import FullCart from "remixicon-react/ShoppingCartFillIcon"
 
 function Header() {
     return (
