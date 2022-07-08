@@ -50,6 +50,8 @@ header {
     }
 }
 
+
+
 .main-page {
     margin-top: 0.5em;
     display: flex;
@@ -93,13 +95,7 @@ header {
         top: 8px;
         right: 8px;
         position: absolute;
-
-        &.cart-empty {
-            color: white;
-        }
-
-        &.cart-full {
-            color: orangered;
-        }
+        color: white;
     }
 }
+

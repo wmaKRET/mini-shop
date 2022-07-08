@@ -19,8 +19,8 @@ function Image({ img }) {
 
     function cartIcon() {
         const photosInCart = cartItems.some(item => item.id === img.id)
-        if (photosInCart) return <FullCart className="card-cart cart-full" onClick={() => deleteFromCart(img.id)} />
-        else if (hovered) return <EmptyCart className="card-cart cart-empty" onClick={() => addToCart(img)} />
+        if (photosInCart) return <FullCart className="card-cart" onClick={() => deleteFromCart(img.id)} />
+        else if (hovered) return <EmptyCart className="card-cart" onClick={() => addToCart(img)} />
     }
 
     return (
