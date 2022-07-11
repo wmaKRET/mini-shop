@@ -99,3 +99,27 @@ header {
     }
 }
 
+.cart {
+    &-page {
+            display: flex;
+            flex-direction: column;
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-image {
+        margin: 1em 2em;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    &-price {
+        margin-left: 5em;
+    }
+}
