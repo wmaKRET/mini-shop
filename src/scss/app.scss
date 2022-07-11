@@ -67,7 +67,6 @@ header {
     border: 2px solid white;
 
     &:hover {
-        //scale: 1.05;
         border: 2px solid orangered;
     }
 
@@ -113,7 +112,7 @@ header {
     }
 
     &-image {
-        margin: 1em 2em;
+        margin: 1em 3em 1em 1em;
         width: 100px;
         height: 100px;
         object-fit: cover;
@@ -121,5 +120,21 @@ header {
 
     &-price {
         margin-left: 5em;
+    }
+
+    &-button {
+        height: 60px;
+        width: 150px;
+        background-color: white;
+        color: orangered;
+        border: solid 2px orangered;
+        font-size: 1rem;
+        letter-spacing: 0.1em;
+
+        transition: all .2s ease-in-out;
+        &:hover {
+            color: white;
+            box-shadow: inset 200px 0 0 0 orangered;
+        }
     }
 }

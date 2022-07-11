@@ -143,7 +143,7 @@ header {
 }
 
 .cart-image {
-  margin: 1em 2em;
+  margin: 1em 3em 1em 1em;
   width: 100px;
   height: 100px;
   -o-object-fit: cover;
@@ -152,5 +152,23 @@ header {
 
 .cart-price {
   margin-left: 5em;
+}
+
+.cart-button {
+  height: 60px;
+  width: 150px;
+  background-color: white;
+  color: orangered;
+  border: solid 2px orangered;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.cart-button:hover {
+  color: white;
+  -webkit-box-shadow: inset 200px 0 0 0 orangered;
+          box-shadow: inset 200px 0 0 0 orangered;
 }
 /*# sourceMappingURL=app.css.map */
