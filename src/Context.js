@@ -5,7 +5,7 @@ const Context = React.createContext()
 function ContextProvider({ children }) {
     const URL = "https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json"
     const [photos, setPhotos] = useState([])
-    const [cartItems, setCartItems] = useState(getLocalStorage())
+    const [cartItems, setCartItems] = useState(getLocalStorage()) 
 
     function getLocalStorage() {
         return localStorage.getItem('mini-shop-wmakret')

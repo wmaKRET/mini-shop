@@ -8,12 +8,15 @@ function useHover() {
     const mouseIsNotOverCard = () => setHovered(false)
 
     useEffect(() => {
-        ref.current.addEventListener("mouseenter", mouseIsOverCard)
-        ref.current.addEventListener("mouseleave", mouseIsNotOverCard)
-
-        return () => {
-            ref.current.addEventListener("mouseenter", mouseIsOverCard)
-            ref.current.addEventListener("mouseleave", mouseIsNotOverCard)
+        const node = ref.current
+        if (node) {
+            node.addEventListener("mouseenter", mouseIsOverCard)
+            node.addEventListener("mouseleave", mouseIsNotOverCard)
+    
+            return () => {
+                node.addEventListener("mouseenter", mouseIsOverCard)
+                node.addEventListener("mouseleave", mouseIsNotOverCard)
+            }
         }
     }, [])
 
